@@ -1,0 +1,19 @@
+[
+    {
+      "diploma": "PG-Diploma-CDAC",
+      "organisation": "Sunbeam Infotech",
+      "startDate": "March, 2024",
+      "endDate": "Aug, 2024 , PG-DAC",
+      "learnings": ["C++ | Java | SpringBoot", "MySQL | SDLC | & .Net"],
+      "imageSrc": "history/cdacIcon.png"
+    },
+    {
+      "diploma": "B.Tech",
+      "organisation": "United College of Engineering",
+      "startDate": "Aug, 2017",
+      "endDate": "Aug, 2021 , ECE",
+      "learnings": ["Compleated my B.Tech from Dr. A.P.J Abdul Kalam Technical University in Electronics & Comm. Engineering with 1st Division ( 73 % aggregate )"],
+      "imageSrc": "history/unitedIcon.png"
+    }
+    
+  ]

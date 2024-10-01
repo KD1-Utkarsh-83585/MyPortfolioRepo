@@ -1,0 +1,26 @@
+[
+    {
+      "title": "To-Do List",
+      "imageSrc": "projects/todoProject.jpg",
+      "description": "This project provided hands-on experience with JavaScript, including event handling, callbacks, and implementing basic CRUD functionalities.",
+      "skills": ["#JavaScript", "#HTML", "#Bootstrap", "#CSS"],
+      "demo": "https://todolistutkarsh.ccbp.tech",
+      "source": "https://github.com/83585-My-Git-Data/ToDoApp"
+    },
+    {
+      "title": "Food Much - Online Restro App",
+      "imageSrc": "projects/foodrestroproject.png",
+      "description": "Through this project, I gained in-depth knowledge of HTML, CSS, and Bootstrap, focusing on building responsive layouts and handling components seamlessly.",
+      "skills": ["#HTML", "#CSS", "#Bootstrap"],
+      "demo": "https://utkarshrestro1.ccbp.tech/",
+      "source": "https://github.com/83585-My-Git-Data/FoodMunchApp"
+    },
+    {
+      "title": "CDAC - Alumni Association Portal",
+      "imageSrc": "projects/alumniproject.png",
+      "description": "As part of a team of four, I developed an Alumni Association Portal during my C-DAC that allows admins and alumni to post jobs and assist job-seeking alumni through referrals.",
+      "skills": ["#Java","#SpringBoot", "#React", "#Bootstrap","#MySQL"],
+      "demo": "https://www.example.com",
+      "source": "https://www.github.com"
+    }
+  ]

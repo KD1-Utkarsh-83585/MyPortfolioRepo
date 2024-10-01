@@ -1,0 +1,218 @@
+@import "../../vars.css";
+
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 160px;
+  z-index: 1;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: var(--color-text);
+  z-index: 1;
+}
+
+.title {
+  font-size: 72px;
+  font-weight: 900;
+  margin-bottom: 33px;
+  font-family: var(--font-roboto);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 70%,
+    rgba(255, 255, 255, 0) 120%
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.description {
+  font-size: 25px;
+  font-family: var(--font-roboto);
+  margin-bottom: 52px;
+  margin-right: 60px;
+  color: rgb(224, 224, 224);
+}
+
+.contactBtn {
+  text-decoration: none;
+  background-color: var(--color-primary);
+  background-color: transparent;
+  color: var(--color-text);
+  border-radius: 100px;
+  border: solid 1px rgb(114, 114, 114);
+  font-size: 30px;
+  font-weight: 400;
+  padding: 17px 26px;
+  box-shadow: 0 7px 10px 2px rgba(5, 17, 32, 0.60);
+  margin: 10px;
+}
+
+.downloadBtn {
+  text-decoration: none;
+  background-color: var(--color-primary);
+  background-color: transparent;
+  color: var(--color-text);
+  border-radius: 100px;
+  border: solid 1px rgb(114, 114, 114);
+  font-size: 30px;
+  font-weight: 400;
+  padding: 17px 26px;
+  /* padding-right: 20px; */
+  box-shadow: 0 7px 10px 2px rgba(5, 17, 32, 0.60);
+  margin: 10px;
+}
+
+.downloadIcon {
+  
+  font-size: 25px;
+  margin-left: 8px;
+}
+
+.heroImg {
+  width: 50%;
+  z-index: 1;
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.buttonsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Spacing between buttons */
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 10px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+.topBlur {
+  position: absolute;
+  width: 50vw;
+  height: 50vw;
+  min-width: 350px;
+  min-width: 350px;
+  top: -128px;
+  left: -10vw;
+  border-radius: 764px;
+  background: rgba(25, 55, 109, 0.7);
+  filter: blur(100px);
+  z-index: 0;
+}
+
+.bottomBlur {
+  position: absolute;
+  width: 70vw;
+  height: 50vw;
+  min-width: 350px;
+  min-width: 250px;
+  top: 246px;
+  right: -25vw;
+  border-radius: 764px;
+  background: rgba(25, 55, 109, 0.7);
+  filter: blur(100px);
+  z-index: 0;
+}
+
+/* @media screen and (max-width:830px){
+    .container{
+        flex-direction: column-reverse;
+    }
+    .content{
+        align-items: center;
+    }
+} */
+
+
+@media screen and (max-width: 990px) {
+  .container {
+    flex-direction: column-reverse;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .content {
+    align-items: center;
+  }
+  .title {
+    font-size: 48px; /* Reduce title size */
+    text-align: center;
+  }
+  .description {
+    font-size: 24px; /* Reduce description size */
+    text-align: center;
+    margin-right: 20px;
+  }
+
+  .buttonsContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .heroImg {
+    width: 70%; /* Make image take more width on smaller screens */
+  }
+
+
+  .contactBtn{
+    font-size: 20px;
+    padding: 10px 18px;
+    border-radius: 100px;
+  }
+
+  .downloadBtn{
+    font-size: 20px;
+    padding: 10px 18px;
+    border-radius: 100px;
+
+
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+  .title {
+    font-size: 36px; /* Further reduce title size */
+  }
+  .description {
+    font-size: 20px; /* Further reduce description size */
+  }
+  .contactBtn {
+    font-size: 20px; /* Reduce button size for smaller screens */
+    padding: 12px 20px;
+  }
+
+  .downloadBtn{
+    font-size: 20px;
+  }
+
+  .heroImg {
+    width: 100%; /* Full width for the image on very small screens */
+  }
+
+  .buttonsContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
